@@ -1,2 +1,2 @@
-# Samuel_DATA606
-Capstone project for my graduate degree in 
+# UMBC Capstone Project
+By Samuel Kolodrubetz
