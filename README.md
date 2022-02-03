@@ -1,2 +1,3 @@
-# UMBC Capstone Project
+# **UMBC Capstone Project**
 By Samuel Kolodrubetz
+
