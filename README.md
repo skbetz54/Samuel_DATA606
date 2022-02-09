@@ -34,6 +34,6 @@ For comparison across the various news outlets, I expect one main outcome: sites
 ## Sources
 <sup>1</sup> - https://abcnews.go.com/2020/story?id=2898636&page=1 - An ABC News article about how fear is a big factor in the stories that are followed, and the ones that ultimately find success. This article is the inspiration for this project's title.  
 <sup>2</sup> - https://www.chicagotribune.com/news/ct-xpm-1989-11-05-8901280504-story.html - the first known appearance of the phrase "if it bleeds, it leads" comes from a New York Magazine article titled "Grins, Gore, and Videotape" by Eric Pooley. This Chicago Tribune article by Eleanor Randolph notes, this as I was unable to find the original article.
+
 <sup>3</sup> - https://thehill.com/opinion/technology/556160-media-spread-fear-americans-listen
-<sup>4</sup>
-<sup>5</sup>
+
