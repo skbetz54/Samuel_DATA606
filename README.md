@@ -1,9 +1,9 @@
-# The Fear-Industrial Complex
+# The Fear-Industrial Complex<sup>1</sup>
 *An analysis on the amount of fear that plays into current US news media by Samuel Kolodrubetz*
 
 ## Topic Introduction
 
-Anyone somewhat familiar with journalism and/or news media knows the quote "if it bleeds, it leads"<sup>1</sup>. For those who aren't, this essentially tells  that when violence, blood, or controversey are involved, it will likely get top billing. While this was originally stated in the late 19th century, the sentiment of the quote still rings true. Turn on any local TV news station and the top story will likely be about a murder, a scandal, or something similar. One thing is common under all of these leading stories, and lots of stories that cover news pages still: fear. Fear is one of the main factors that drives clicks/reads for every news outlet. But how much exactly do each of these outlets use this strategy of fear? Using sentiment analysis, I seek to look at this problem of fear in (online print) news media and its comprable impacts across various large outlets.
+Anyone somewhat familiar with journalism and/or news media knows the quote "if it bleeds, it leads"<sup>2</sup>. For those who aren't, this essentially tells  that when violence, blood, or controversey are involved, it will likely get top billing. While this was originally stated in the late 19th century, the sentiment of the quote still rings true. Turn on any local TV news station and the top story will likely be about a murder, a scandal, or something similar. One thing is common under all of these leading stories, and lots of stories that cover news pages still: fear. Fear is one of the main factors that drives clicks/reads for every news outlet. But how much exactly do each of these outlets use this strategy of fear? Using sentiment analysis, I seek to look at this problem of fear in (online print) news media and its comprable impacts across various large outlets.
 
 ## Questions To Answer
 
@@ -36,8 +36,8 @@ With that being said, the number 1 outcome I intend to see is to be able to diff
 
 
 ## Sources
-<sup>1</sup> - https://www.chicagotribune.com/news/ct-xpm-1989-11-05-8901280504-story.html - the first time I could find this quote being mentioned is in the 1898 Chicago Tribune article by Eleanor Randolph talking to another journalist about the state of print journalism all the way in the late 19th century. 
-<sup>2</sup>
+<sup>1</sup> - https://abcnews.go.com/2020/story?id=2898636&page=1 - An ABC News article about how fear is a big factor in the stories that are followed, and the ones that ultimately find success. This article is the inspiration for this project's title.  
+<sup>2</sup> - https://www.chicagotribune.com/news/ct-xpm-1989-11-05-8901280504-story.html - the first time I could find this quote being mentioned is in the 1898 Chicago Tribune article by Eleanor Randolph talking to another journalist about the state of print journalism all the way in the late 19th century.
 <sup>3</sup>
 <sup>4</sup>
 <sup>5</sup>
