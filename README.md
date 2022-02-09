@@ -25,16 +25,6 @@ With that being said, the number 1 outcome I intend to see is to be able to diff
 
 
 
-
-
-
-
-
-
-*Title source: (ABC: "The Fear-Industrial Complex")[https://abcnews.go.com/2020/story?id=2898636&page=1])
-
-
-
 ## Sources
 <sup>1</sup> - https://abcnews.go.com/2020/story?id=2898636&page=1 - An ABC News article about how fear is a big factor in the stories that are followed, and the ones that ultimately find success. This article is the inspiration for this project's title.  
 <sup>2</sup> - https://www.chicagotribune.com/news/ct-xpm-1989-11-05-8901280504-story.html - the first time I could find this quote being mentioned is in the 1898 Chicago Tribune article by Eleanor Randolph talking to another journalist about the state of print journalism all the way in the late 19th century.
