@@ -8,8 +8,6 @@ Anyone somewhat familiar with journalism and/or news media is familiar with the 
 Motivations for each individual news outlet differs as well. Nonprofits organizations do not seek to make profit from their reporting, and typically operate independently. For-profit organizations on the other hand operate with the intention to make a proift, and are often subject to control from the (public or private) financial sources. Additionally, each company and journalist will frame their stories differently. Despite these differences, fear is still a widely used tactic. But how much is it being used?
 
 
-![Angry News Dude](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ndtv.com%2Foffbeat%2Fmsnbc-anchor-lawrence-odonnells-angry-off-camera-meltdown-leaked-watch-viral-video-1753743&psig=AOvVaw250qKL--vxQgdoD0jXE9E-&ust=1645148120719000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKC3xL7MhfYCFQAAAAAdAAAAABAD)
-
 ## Questions to Answer
 
 This project looks at two questions regarding the use of fear within (online) news topics:
