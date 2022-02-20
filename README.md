@@ -1,6 +1,8 @@
 # The Fear-Industrial Complex<sup>1</sup>
 *An analysis on the amount of fear that plays into current US news media by Samuel Kolodrubetz*
 
+<u>Note:</u> This readme file is going to be a file to update viewers on the current state of my capstone project. It will be continually updated to reflect the new work that I've been doing, each denoted by the date of the release (a.k.a. the turn in date of the deliverables). If you are looking for the project proposal (which will be available here after the conclusion of the project), please follow [this link](https://github.com/skbetz54/Samuel_DATA606/blob/main/Approved_Proposal.md)
+
 ## Topic Introduction
 
 Anyone somewhat familiar with journalism and/or news media is familiar with the quote "if it bleeds, it leads" <sup>2</sup>. For those who aren't, this essentially tells us that popular and leading stories often involve blood, death, controversial subjects, and other similar topics all revolving around one thing: **fear**. Fear is nowhere near a new concept, especially in journalism. The above quote was coined in the late 19<sup>th</sup> century, and that feeling still endures today. If you turn on any local TV station or read any online article the top story is likely going to be something that involves violence, a scandal, or a similar salacious event. 
