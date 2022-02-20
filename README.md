@@ -5,8 +5,8 @@ This readme file is going to be a file to update viewers on the current state of
 
 ## **<ins>20<sup>th</sup> February, 2022 - Web Scraping<ins>**
 
-[Link to Happyface EDA notebook]()
-[Link to scraping notebook]()
+- [Link to Happyface EDA notebook]()
+- [Link to scraping notebook]()
   
 ## Topic Introduction
 
