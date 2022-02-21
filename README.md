@@ -10,7 +10,7 @@ This readme file is going to be a file to update viewers on the current state of
 This week's update is the beginning of my project; I am currently working on exploring the labeled dataset that contains tweets falling within 1 of 6 emotions. 
   
   
- ## **<ins>20<sup>th</sup> February, 2022 - Web Scraping<ins>**
+ ## **<ins>27<sup>th</sup> February, 2022 - Web Scraping<ins>**
   
-- [Link to scraping notebook]()
+- [Link to scraping notebook]() \* COMING SOONG \*
   
