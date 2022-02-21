@@ -12,5 +12,5 @@ This week's update is the beginning of my project; I am currently working on exp
   
  ## **<ins>27<sup>th</sup> February, 2022 - Web Scraping<ins>**
   
-- [Link to scraping notebook]() \* COMING SOONG \*
+- [Link to scraping notebook]() \*COMING SOON\*
   
