@@ -1,6 +1,6 @@
 # **Capstone Notebooks**
 
-This directory contains all the notebooks (done using mostly Google Colaboratory) use to bring about my final product. Throughout this (Spring 2022) semester, I will continually update this page to add links and descriptions to each notebook. 
+This directory contains all the notebooks (done using Google Colaboratory) use to bring about my final product. Throughout this (Spring 2022) semester, I will continually update this page to add links and descriptions to each notebook. 
 
 **<ins>Links to (Colaboratory) Notebooks</ins>**
 
