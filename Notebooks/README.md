@@ -6,5 +6,3 @@ This directory contains all the notebooks (done using mostly Google Colaboratory
 
 - [Part 1 - Web Scraping News Articles](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_Web_Scrape.ipynb)
 
-
-**<ins>Links to Python files \*COMING SOON\*</ins>**
