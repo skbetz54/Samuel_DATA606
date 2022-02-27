@@ -29,7 +29,7 @@ For this kind of project where we are using text to analyze feelings of articles
 
 Next, the variable of measure in this project is the emotion of the article/headline/sentence. While the main focus will be on the negative emotions of fear and anger, having a way to quantify other emotions could prove beneficial to the final outcome. With that, I can quantify the level of each emotion being shown within each article. For each article, the intended output will be a list of probabilities that the given input (article/sentence) belongs to each class (emotion). For example, a sentence reading "I am feeling sad" could have an output of (0.98, 0, 0, 0.01, 0.01), where the first value is the "saddness" class meaning the model predicts that sentence is showing sadness with a high probability. This is the baseline of measuring fear within each article, in what I will call the "Fear Index". The higher the probability the model gives to the "fear" class, the higher the Fear Index. Additionally, for measuring the relative use of fear across various news outlets, I will take into account each outlet's number of articles and the individual article's Fear Index. 
 
-## **<ins>20<sup>th</sup>Exploratory Data Aanalysis<ins>**
+## **Exploratory Data Aanalysis<ins>**
 
 - [Link to Happyface EDA notebook]()
 - [Link to scraping notebook]() \*COMING SOON\*
