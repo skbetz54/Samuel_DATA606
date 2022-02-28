@@ -47,7 +47,13 @@ Another point of focus in this Exploratory Analysis is the word frequency for ea
 
 <img width="500" alt="freq_fear" src="https://user-images.githubusercontent.com/70443630/155911189-b88e9b82-a42c-4eae-9f42-82157a3ee4e6.PNG"><img width="500" alt="freq_surprise" src="https://user-images.githubusercontent.com/70443630/155911193-9f31ffb9-d358-4b20-9cce-1c9c9632d849.PNG">
 
+However, if we expand our search and include more of the top words being used for each emotion, we start to see a better picture of the unique lexicons being used within each emotion. To do this, I created wordclouds for each emotion and the frequency of words being used.
 
+First for fear:
+<img width="600" alt="wordcloud_fear" src="https://user-images.githubusercontent.com/70443630/155911349-ca550de0-56d3-4340-b5a9-42a512b692ad.PNG">
+
+And for surprised:
+<img width="600" alt="wordcloud_surprised" src="https://user-images.githubusercontent.com/70443630/155911377-2932d035-b9d2-44ee-a088-b1cb031e2bab.PNG">
 
 
 
