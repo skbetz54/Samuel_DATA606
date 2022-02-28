@@ -43,7 +43,7 @@ The first part of my project entails creating a machine learning model (specific
 
 <img width="500" alt="frequency chart" src="https://user-images.githubusercontent.com/70443630/155910809-a578cbf8-e554-4b90-a0e8-38f26061dae0.PNG">
 
-Another point of focus in this Exploratory Analysis is the word frequency for each emotion. When looking at the top 10 words used for fear and surprise, there is not much we can gather; there are only a couple words that are associated with the emotion (fear --> afraid, surprised --> shock). 
+Another point of focus in this Exploratory Analysis is the word frequency for each emotion. When looking at the top 10 words used for fear and surprise, there is not much we can gather; there are only a couple words that are associated with the emotion (fear --> afraid, surprised --> shock). While this does not tell us much about unique words seen in each class, it can help us dictate what words NOT to include in the model building. For example, the word "really" and "like" appear often in every single class. Adding these to the list of stopwords (common words that would not add any context or improve the model) is a possibility when reaching the model creation stage.
 
 <img width="500" alt="freq_fear" src="https://user-images.githubusercontent.com/70443630/155911189-b88e9b82-a42c-4eae-9f42-82157a3ee4e6.PNG"><img width="500" alt="freq_surprise" src="https://user-images.githubusercontent.com/70443630/155911193-9f31ffb9-d358-4b20-9cce-1c9c9632d849.PNG">
 
