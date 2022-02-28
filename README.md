@@ -1,6 +1,11 @@
 # The Fear-Industrial Complex<sup>1</sup>
 *An analysis on the amount of fear that plays into current US news media by Samuel Kolodrubetz*
-[Link to full proposal](https://github.com/skbetz54/Samuel_DATA606/blob/main/Approved_Proposal.md)
+
+## Links
+
+- [Link to full proposal](https://github.com/skbetz54/Samuel_DATA606/blob/main/Approved_Proposal.md)
+- [Link to proposal presentation](https://github.com/skbetz54/Samuel_DATA606/blob/main/Samuel%20Kolodrubetz%20-%20Fear%20Industrial%20Complex.pptx)
+- [Link to EDA - Part 1](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
 
 ## Topic Introduction
 
@@ -20,7 +25,7 @@ To investigate various news sources to perform a sentiment analysis to determine
 
 ## Data Source and Description
 
-The first step is using Deep Learning to train a Recurrent Neural Network (RNN) on labeled text data from [huggingface.co](https://huggingface.co/datasets/emotion). The dataset contains 20,000 sentences and tweets which are classified as as one of 5 emotions: sadness, joy, love, anger and fear. It is split into training, validation, and test sets of 16,000/2,000/2,000.
+The first step is using Deep Learning to train a Recurrent Neural Network (RNN) on labeled text data from [huggingface.co](https://huggingface.co/datasets/emotion). The dataset contains 20,000 sentences and tweets which are classified as as one of 6 emotions: sadness, joy, love, surprise, anger, and fear. It is split into training, validation, and test sets of 16,000/2,000/2,000.
 
 **Note:** This dataset is similar to [one found on Kaggle](https://www.kaggle.com/pashupatigupta/emotion-detection-from-text), but that dataset focuses on tweets with over 13 emotions, but this is a separate dataset with only 5. [Huggingface dataset github](https://github.com/dair-ai/emotion_dataset)
 
@@ -35,7 +40,7 @@ Next, the variable of measure in this project is the emotion of the article/head
 - [Link to Happyface EDA notebook]()
 - [Link to scraping notebook]() \*COMING SOON\*
   
-This week's update is the beginning of my project; I am currently working on exploring the labeled dataset that contains tweets falling within 1 of 6 emotions. 
+
   
   
 
