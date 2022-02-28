@@ -41,7 +41,7 @@ Next, the variable of measure in this project is the emotion of the article/head
 
 The first part of my project entails creating a machine learning model (specifically a Recurrent Neural Network) using the labeled Huggingface emotion data, but before I dive into the modeling, I need to understand the dataset a little better. This entails both understanding the entire dataset, and also the difference between classes within the dataset. For example, in the image below we see that sadness and joy have a much higher number of samples compared to other emotions. This tells us that in the model creation, we will have to deal with this class imbalance (likely by downsampling the high-frequency emotions).
 
-<img width="203" alt="frequency chart" src="https://user-images.githubusercontent.com/70443630/155910809-a578cbf8-e554-4b90-a0e8-38f26061dae0.PNG">
+<img width="400" alt="frequency chart" src="https://user-images.githubusercontent.com/70443630/155910809-a578cbf8-e554-4b90-a0e8-38f26061dae0.PNG">
 
 
 
