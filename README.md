@@ -57,9 +57,6 @@ And for surprised:
 
 <img width="600" alt="wordcloud_surprised" src="https://user-images.githubusercontent.com/70443630/155911377-2932d035-b9d2-44ee-a088-b1cb031e2bab.PNG">
 
-
-
-- [Link to scraping notebook]() \*COMING SOON\*
   
 ## **Machine Learning Implementation**
 
@@ -68,7 +65,8 @@ And for surprised:
 Now that our data is cleaned and ready to be used within a deep learning model, we can now attempt to build 
 
 ## **Web Scrape and Real-World Results**
-  
+
+- [Link to scraping notebook]() \*COMING SOON\*
   
 ## **Conclusions**
   
