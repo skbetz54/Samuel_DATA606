@@ -38,7 +38,7 @@ The first step is using Deep Learning to train a Recurrent Neural Network (RNN) 
 
 **Note:** This dataset is similar to [one found on Kaggle](https://www.kaggle.com/pashupatigupta/emotion-detection-from-text), but that dataset focuses on tweets with over 13 emotions, but this is a separate dataset with only 5. [Huggingface dataset github](https://github.com/dair-ai/emotion_dataset)
 
-Once the model(s) is trained and tested to a sufficient accuracy, I am then able to perform the analysis of emotions being used in real-world articles. To do this, I'll first create a Pandas dataframe with the articles' date, title, and text (obtained using the Python library Newspaper3k). In order to determine how fear and other emotions are used differently in different outlets, I will be considering three news outlets across the political spectrum: AP News, CNN, and Fox News. Additonally, after some investigation the sensational languages being used occurr much more frequently within opinion articles. For this reason, articles scraped for this project are opinion pieces hosted on these sites.
+Once the model(s) is trained and tested to a sufficient accuracy, I am then able to perform the analysis of emotions being used in real-world articles. To do this, I'll first create a Pandas dataframe with the articles' date, title, and text (obtained using the Python library Newspaper3k). In order to determine how fear and other emotions are used differently in different outlets, I will be considering two news outlets across the political spectrum: CNN and Fox News. Additonally, after some investigation the sensational languages being used occurr much more frequently within opinion articles. For this reason, articles scraped for this project are opinion pieces hosted on these sites.
 
 The variable of measure in this project is the emotion of the article/headline/sentence. While the main focus will be on the negative emotions of fear and anger, having a way to quantify other emotions could prove beneficial to the final outcome. With that, I can quantify the level of each emotion being shown within each article. For each article, the intended output will be a list of probabilities that the given input (article/sentence) belongs to each class (emotion). For example, a sentence reading "I am feeling sad" could have an output of (0.98, 0, 0, 0.01, 0.01), where the first value is the "saddness" class meaning the model predicts that sentence is showing sadness with a high probability. This is the baseline of measuring fear within each article, in what I will call the "Fear Index". The higher the probability the model gives to the "fear" class, the higher the Fear Index. Additionally, for measuring the relative use of fear across various news outlets, I will take into account each outlet's number of articles and the individual article's Fear Index. 
 
@@ -65,11 +65,19 @@ And for surprised:
 <img width="600" alt="wordcloud_surprised" src="https://user-images.githubusercontent.com/70443630/155911377-2932d035-b9d2-44ee-a088-b1cb031e2bab.PNG">
 
   
-## **Machine Learning Implementation and results**
+## **Machine Learning Implementation and Results**
 
 Now that the data is cleaned and ready to be used within a deep learning model, I can now build a model to capture how much fear is being used within current news media.
+<img width="209" alt="predictions_cnn" src="https://user-images.githubusercontent.com/70443630/168871431-0f0b798f-c6a9-4f0b-9a57-85c3b3e7e108.PNG">
 
 
-  
+<img width="141" alt="predictions_fn" src="https://user-images.githubusercontent.com/70443630/168871437-f98fd429-018c-44ed-afcf-b38128fd7966.PNG">
+<img width="211" alt="predictions_full" src="https://user-images.githubusercontent.com/70443630/168871457-785acb27-f657-48d6-a4d8-1d04703abe1e.PNG">
+
+
+<img width="214" alt="polarity_hist" src="https://user-images.githubusercontent.com/70443630/168871418-b719e60a-60d1-40a6-8b98-79ead023feed.PNG">
+
+
+
 ## **Conclusions**
   
