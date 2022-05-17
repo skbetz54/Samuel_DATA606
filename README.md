@@ -6,10 +6,10 @@
 - [Link to full proposal](https://github.com/skbetz54/Samuel_DATA606/blob/main/Approved_Proposal.md)
 - [Link to proposal video presentation](https://www.youtube.com/watch?v=F_P-RPXwhEE)
 - [Link to proposal presentation](https://github.com/skbetz54/Samuel_DATA606/blob/main/Samuel%20Kolodrubetz%20-%20Fear%20Industrial%20Complex.pptx)
-- [Link to EDA] (https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/EDA_Hugging_Face.ipynb)
-- [Link to Machine Learning](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
+- [Link to EDA](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/EDA_Hugging_Face.ipynb)
+- [Link to Machine Learning](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Machine_Learning_Implementation.ipynb)
 - [Link to Web Scrape - CNN](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
-- [Link to Web Scrape - Fox News](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
+- [Link to Web Scrape - Fox News](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb))
 
 
 
