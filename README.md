@@ -93,3 +93,4 @@ Each article tested was also assigned a polarity level to see where each one fel
 1. Is fear used more than other emotions within news articles? – **Fear and surprise are the most used emotions within real-world articles. More positive emotions (love and joy) are used much less.**
 2. Is there a difference in the levels of fear used between different media outlets? – **From the collected articles, there is no noticeable difference in emotions used. Each site follows the same pattern.**
 
+Understandably, these results could be much different if we were to take another 50 articles from the same sites at a different time; the emotions used can vary because of the author or the stories being told on the given day. Because of this we need to tamper our expectations from these conclusions. While it makes sense that fear and surprise are the two most widely used emotions, this is not a 
