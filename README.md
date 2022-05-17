@@ -68,16 +68,28 @@ And for surprised:
 ## **Machine Learning Implementation and Results**
 
 Now that the data is cleaned and ready to be used within a deep learning model, I can now build a model to capture how much fear is being used within current news media.
+
+The real-world articles used come from CNN and Fox News, with 50 articles from each site.
+
+
 <img width="209" alt="predictions_cnn" src="https://user-images.githubusercontent.com/70443630/168871431-0f0b798f-c6a9-4f0b-9a57-85c3b3e7e108.PNG">
 
+Within CNN, we see that fear and surprise are both very common predictions. 
 
 <img width="141" alt="predictions_fn" src="https://user-images.githubusercontent.com/70443630/168871437-f98fd429-018c-44ed-afcf-b38128fd7966.PNG">
+
+In Articles from Fox News we see a very similar distribution of emotions being predicted upon. Fear and surprise are among the most common emotions illicited, with joy and love being the least popular.
+
 <img width="211" alt="predictions_full" src="https://user-images.githubusercontent.com/70443630/168871457-785acb27-f657-48d6-a4d8-1d04703abe1e.PNG">
 
+The full dataset again shows that fear and surprise are the most widely used emotions.
 
 <img width="214" alt="polarity_hist" src="https://user-images.githubusercontent.com/70443630/168871418-b719e60a-60d1-40a6-8b98-79ead023feed.PNG">
 
-
+Each article tested was also assigned a polarity level to see where each one fell on a scale of -1 (negative) to 1 (positive). Similar to the histogram of the huggingface data, the histogram for each article's polarity skews to the negative side, but again it stays much closer to 0 (neutral) than previously expected.
 
 ## **Conclusions**
   
+1. Is fear used more than other emotions within news articles? – **Fear and surprise are the most used emotions within real-world articles. More positive emotions (love and joy) are used much less.**
+2. Is there a difference in the levels of fear used between different media outlets? – **From the collected articles, there is no noticeable difference in emotions used. Each site follows the same pattern.**
+
