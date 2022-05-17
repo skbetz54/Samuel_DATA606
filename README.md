@@ -95,7 +95,7 @@ After testing several different parameters and figuring which combinations work 
 <img width="400" alt="model_desc" src="https://user-images.githubusercontent.com/70443630/168905350-ccdfab4a-950e-449f-b2a2-61f64775a1c0.PNG">
 
 
-<u>Results</u>
+**Results**
 
 As mentioned above the articles being tested come from CNN and Fox News, obtained through scraping each site found [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb) for CNN and [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb) for Fox News. 50 articles were obtained from each site from a period of 5 days (10 articles per site per day). The breakdown of the scraped articles are as follows:
 
