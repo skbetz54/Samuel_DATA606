@@ -6,7 +6,13 @@
 - [Link to full proposal](https://github.com/skbetz54/Samuel_DATA606/blob/main/Approved_Proposal.md)
 - [Link to proposal video presentation](https://www.youtube.com/watch?v=F_P-RPXwhEE)
 - [Link to proposal presentation](https://github.com/skbetz54/Samuel_DATA606/blob/main/Samuel%20Kolodrubetz%20-%20Fear%20Industrial%20Complex.pptx)
-- [Link to EDA - Part 1](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
+- [Link to EDA](- [Link to EDA](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/EDA_Hugging_Face.ipynb)
+- [Link to Machine Learning](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
+- [Link to Web Scrape - CNN](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
+- [Link to Web Scrape - Fox News](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/1_1_EDA_Hugging_Face.ipynb)
+
+
+
 
 ## Topic Introduction
 
@@ -62,7 +68,8 @@ And for surprised:
 
 - [Link to Machine Learning notebook](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/2_1_Machine_Learning_Implementation.ipynb)
 
-Now that our data is cleaned and ready to be used within a deep learning model, we can now attempt to build 
+Now that the data is cleaned and ready to be used within a deep learning model, I can now build a model to capture how much fear is being used within current news media.
+
 
 ## **Web Scrape and Real-World Results**
 
