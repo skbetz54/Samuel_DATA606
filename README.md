@@ -65,16 +65,11 @@ And for surprised:
 <img width="600" alt="wordcloud_surprised" src="https://user-images.githubusercontent.com/70443630/155911377-2932d035-b9d2-44ee-a088-b1cb031e2bab.PNG">
 
   
-## **Machine Learning Implementation**
-
-- [Link to Machine Learning notebook](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/2_1_Machine_Learning_Implementation.ipynb)
+## **Machine Learning Implementation and results**
 
 Now that the data is cleaned and ready to be used within a deep learning model, I can now build a model to capture how much fear is being used within current news media.
 
 
-## **Web Scrape and Real-World Results**
-
-- [Link to scraping notebook]() \*COMING SOON\*
   
 ## **Conclusions**
   
