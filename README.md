@@ -74,14 +74,15 @@ In order to create the best RNN to classify the news articles, I wanted to test 
 2. A randomly sampled dataset with the two largest classes (love and joy) downsampled to 50,000 tweets each.
 3. A randomly sampled with each class downsampled to 15,000 tweets each. 
 
-<img width="250" alt="frequency chart - std" src="https://user-images.githubusercontent.com/70443630/168902050-67baa6a8-5447-4386-a58a-219f3e18d619.PNG">
+<img width="400" alt="frequency chart - std" src="https://user-images.githubusercontent.com/70443630/168902050-67baa6a8-5447-4386-a58a-219f3e18d619.PNG">
 Standard Dataset
 
-<img width="250" alt="frequency chart - 50k" src="https://user-images.githubusercontent.com/70443630/168902097-5983101a-0346-46d7-9ef8-32c8f7fedf72.PNG">
+<img width="400" alt="frequency chart - 50k" src="https://user-images.githubusercontent.com/70443630/168902097-5983101a-0346-46d7-9ef8-32c8f7fedf72.PNG">
 50K Downsampled Dataset
 
-<img width="250" alt="frequency chart - 15k" src="https://user-images.githubusercontent.com/70443630/168902139-3d4ee574-e83c-4626-9f55-f94586f7dce0.PNG">
+<img width="400" alt="frequency chart - 15k" src="https://user-images.githubusercontent.com/70443630/168902139-3d4ee574-e83c-4626-9f55-f94586f7dce0.PNG">
 15K Sample Datset
+
 
 As we can see below, while the smaller datasets increased their accuracy slightly slower each epoch, the time taken for the full dataset was much longer. For that reason, the final "best" model was trained and tested on the dataset with 15,000 samples for each class. 
 
@@ -93,25 +94,24 @@ After testing several different parameters and figuring which combinations work 
 
 <img width="400" alt="model_desc" src="https://user-images.githubusercontent.com/70443630/168905350-ccdfab4a-950e-449f-b2a2-61f64775a1c0.PNG">
 
+
 <u>Results</u>
 
 As mentioned above the articles being tested come from CNN and Fox News, obtained through scraping each site found [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb) for CNN and [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb) for Fox News. 50 articles were obtained from each site from a period of 5 days (10 articles per site per day). The breakdown of the scraped articles are as follows:
 
 <img width="500" alt="table_scrape" src="https://user-images.githubusercontent.com/70443630/168900045-86f8728a-fa00-49af-94b1-906be5a6954b.PNG">
 
-Each article is contained in a Pandas dataframe, and is preprocessed using the same cleaning techniques used on the huggingface dataset (tokenizing, stopword removal, lemmatization). After this, the text of each article is run through the saved model
+Each article is contained in a Pandas dataframe, and is preprocessed using the same cleaning techniques used on the huggingface dataset (tokenizing, stopword removal, lemmatization). After this, the text of each article is run through the saved model described above and a prediction of which emotion the article represents is sent back. 
 
-<u>Results</u>
 
+<img width="500" alt="predictions_fn" src="https://user-images.githubusercontent.com/70443630/168871437-f98fd429-018c-44ed-afcf-b38128fd7966.PNG">
+
+In Articles from Fox News we see that fear is indeed a popular emotion used in the selected news articles, followed closely by surprise, anger, and sadness. Another notable finding is that aside from surprise, positive emotions (joy and love) were not predicted to be many of the articles' sentiment.
 
 
 <img width="500" alt="predictions_cnn" src="https://user-images.githubusercontent.com/70443630/168871431-0f0b798f-c6a9-4f0b-9a57-85c3b3e7e108.PNG">
 
-Within CNN, we see that fear and surprise are both very common predictions. 
-
-<img width="500" alt="predictions_fn" src="https://user-images.githubusercontent.com/70443630/168871437-f98fd429-018c-44ed-afcf-b38128fd7966.PNG">
-
-In Articles from Fox News we see a very similar distribution of emotions being predicted upon. Fear and surprise are among the most common emotions illicited, with joy and love being the least popular.
+In similar findings to the articles from Fox News, the sentiment of articles from CNN were largely negative, with fear and surprise being the most popular emotion classified. 
 
 <img width="500" alt="predictions_full" src="https://user-images.githubusercontent.com/70443630/168871457-785acb27-f657-48d6-a4d8-1d04703abe1e.PNG">
 
