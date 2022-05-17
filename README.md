@@ -73,6 +73,8 @@ In order to create the best RNN to classify the news articles, I wanted to test 
 1. The entire dataset of 416,806 tweets
 2. A randomly sampled dataset with the two largest classes (love and joy) downsampled to 50,000 tweets each.
 3. A randomly sampled with each class downsampled to 15,000 tweets each. 
+
+
 Standard Dataset
 
 <img width="400" alt="frequency chart - std" src="https://user-images.githubusercontent.com/70443630/168902050-67baa6a8-5447-4386-a58a-219f3e18d619.PNG">
