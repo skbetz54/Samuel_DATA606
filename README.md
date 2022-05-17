@@ -34,11 +34,11 @@ Since much of an article's information are captured in the first paragraph (with
 
 ## Data Source and Description
 
-The first step is using Deep Learning to train a Recurrent Neural Network (RNN) on labeled text data from [huggingface.co](https://huggingface.co/datasets/emotion). The dataset contains 20,000 sentences and tweets which are classified as as one of 6 emotions: sadness, joy, love, surprise, anger, and fear. It is split into training, validation, and test sets of 16,000/2,000/2,000.
+The first step is using Deep Learning to train a Recurrent Neural Network (RNN) on labeled text data from [huggingface.co](https://huggingface.co/datasets/emotion). The dataset contains 416,806 sentences and tweets which are classified as as one of 6 emotions: sadness, joy, love, surprise, anger, and fear.
 
 **Note:** This dataset is similar to [one found on Kaggle](https://www.kaggle.com/pashupatigupta/emotion-detection-from-text), but that dataset focuses on tweets with over 13 emotions, but this is a separate dataset with only 5. [Huggingface dataset github](https://github.com/dair-ai/emotion_dataset)
 
-Once the model(s) is trained and tested to a sufficient accuracy, I am then able to perform the analysis of emotions being used in real-world articles. To do this, I'll first create a Pandas dataframe with the articles' date, title, and text (obtained using the Python library Newspaper3k). In order to determine how fear and other emotions are used differently in different outlets, I will be considering two news outlets across the political spectrum: CNN and Fox News. Additonally, after some investigation the sensational languages being used occurr much more frequently within opinion articles. For this reason, articles scraped for this project are opinion pieces hosted on these sites.
+Once the model(s) is trained and tested to a sufficient accuracy, I am then able to perform the analysis of emotions being used in real-world articles. To do this, I'll first create a Pandas dataframe with the articles' date, headline, and text (obtained using the Python library Newspaper3k). In order to determine how fear and other emotions are used differently in different outlets, I will be considering two news outlets across the political spectrum: CNN and Fox News. Additonally, after some investigation the sensational languages being used occurr much more frequently within opinion articles. For this reason, articles scraped for this project are opinion pieces hosted on these sites.
 
 The variable of measure in this project is the emotion of the article/headline/sentence. While the main focus will be on the negative emotions of fear and anger, having a way to quantify other emotions could prove beneficial to the final outcome. With that, I can quantify the level of each emotion being shown within each article. For each article, the intended output will be a list of probabilities that the given input (article/sentence) belongs to each class (emotion). For example, a sentence reading "I am feeling sad" could have an output of (0.98, 0, 0, 0.01, 0.01), where the first value is the "saddness" class meaning the model predicts that sentence is showing sadness with a high probability. This is the baseline of measuring fear within each article, in what I will call the "Fear Index". The higher the probability the model gives to the "fear" class, the higher the Fear Index. Additionally, for measuring the relative use of fear across various news outlets, I will take into account each outlet's number of articles and the individual article's Fear Index. 
 
@@ -69,7 +69,40 @@ And for surprised:
 
 Now that the data is cleaned and ready to be used within a deep learning model, I can now build a model to capture how much fear is being used within current news media.
 
-The real-world articles used come from CNN and Fox News, with 50 articles from each site.
+In order to create the best RNN to classify the news articles, I wanted to test various measures that could impact each model. The first is the input size of the dataset. To measure the impact I trained models on 3 different curated datasets:
+1. The entire dataset of 416,806 tweets
+2. A randomly sampled dataset with the two largest classes (love and joy) downsampled to 50,000 tweets each.
+3. A randomly sampled with each class downsampled to 15,000 tweets each. 
+
+<img width="250" alt="frequency chart - std" src="https://user-images.githubusercontent.com/70443630/168902050-67baa6a8-5447-4386-a58a-219f3e18d619.PNG">
+Standard Dataset
+
+<img width="250" alt="frequency chart - 50k" src="https://user-images.githubusercontent.com/70443630/168902097-5983101a-0346-46d7-9ef8-32c8f7fedf72.PNG">
+50K Downsampled Dataset
+
+<img width="250" alt="frequency chart - 15k" src="https://user-images.githubusercontent.com/70443630/168902139-3d4ee574-e83c-4626-9f55-f94586f7dce0.PNG">
+15K Sample Datset
+
+As we can see below, while the smaller datasets increased their accuracy slightly slower each epoch, the time taken for the full dataset was much longer. For that reason, the final "best" model was trained and tested on the dataset with 15,000 samples for each class. 
+
+<img width="500" alt="b1_full_time" src="https://user-images.githubusercontent.com/70443630/168902624-b32fd28b-a2e2-4a8e-b02d-24d4f1a9c0fb.PNG">
+
+The second hyperparameter of focus was batch size. Again, similar to the size of the dataset, the main difference in using different batch sizes is in training time. After testing various batch sizes (1, 16, & 32), the "best" model was trained and tested with a batch size of 16.
+
+After testing several different parameters and figuring which combinations work the best, the following model was used:
+
+<img width="400" alt="model_desc" src="https://user-images.githubusercontent.com/70443630/168905350-ccdfab4a-950e-449f-b2a2-61f64775a1c0.PNG">
+
+<u>Results</u>
+
+As mentioned above the articles being tested come from CNN and Fox News, obtained through scraping each site found [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb) for CNN and [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb) for Fox News. 50 articles were obtained from each site from a period of 5 days (10 articles per site per day). The breakdown of the scraped articles are as follows:
+
+<img width="500" alt="table_scrape" src="https://user-images.githubusercontent.com/70443630/168900045-86f8728a-fa00-49af-94b1-906be5a6954b.PNG">
+
+Each article is contained in a Pandas dataframe, and is preprocessed using the same cleaning techniques used on the huggingface dataset (tokenizing, stopword removal, lemmatization). After this, the text of each article is run through the saved model
+
+<u>Results</u>
+
 
 
 <img width="500" alt="predictions_cnn" src="https://user-images.githubusercontent.com/70443630/168871431-0f0b798f-c6a9-4f0b-9a57-85c3b3e7e108.PNG">
@@ -93,4 +126,3 @@ Each article tested was also assigned a polarity level to see where each one fel
 1. Is fear used more than other emotions within news articles? – **Fear and surprise are the most used emotions within real-world articles. More positive emotions (love and joy) are used much less.**
 2. Is there a difference in the levels of fear used between different media outlets? – **From the collected articles, there is no noticeable difference in emotions used. Each site follows the same pattern.**
 
-Understandably, these results could be much different if we were to take another 50 articles from the same sites at a different time; the emotions used can vary because of the author or the stories being told on the given day. Because of this we need to tamper our expectations from these conclusions. While it makes sense that fear and surprise are the two most widely used emotions, this is not a 
