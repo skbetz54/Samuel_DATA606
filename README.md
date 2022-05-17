@@ -73,15 +73,15 @@ In order to create the best RNN to classify the news articles, I wanted to test 
 1. The entire dataset of 416,806 tweets
 2. A randomly sampled dataset with the two largest classes (love and joy) downsampled to 50,000 tweets each.
 3. A randomly sampled with each class downsampled to 15,000 tweets each. 
-
-<img width="400" alt="frequency chart - std" src="https://user-images.githubusercontent.com/70443630/168902050-67baa6a8-5447-4386-a58a-219f3e18d619.PNG">
 Standard Dataset
+<img width="400" alt="frequency chart - std" src="https://user-images.githubusercontent.com/70443630/168902050-67baa6a8-5447-4386-a58a-219f3e18d619.PNG">
 
-<img width="400" alt="frequency chart - 50k" src="https://user-images.githubusercontent.com/70443630/168902097-5983101a-0346-46d7-9ef8-32c8f7fedf72.PNG">
 50K Downsampled Dataset
+<img width="400" alt="frequency chart - 50k" src="https://user-images.githubusercontent.com/70443630/168902097-5983101a-0346-46d7-9ef8-32c8f7fedf72.PNG">
 
-<img width="400" alt="frequency chart - 15k" src="https://user-images.githubusercontent.com/70443630/168902139-3d4ee574-e83c-4626-9f55-f94586f7dce0.PNG">
 15K Sample Datset
+<img width="400" alt="frequency chart - 15k" src="https://user-images.githubusercontent.com/70443630/168902139-3d4ee574-e83c-4626-9f55-f94586f7dce0.PNG">
+
 
 
 As we can see below, while the smaller datasets increased their accuracy slightly slower each epoch, the time taken for the full dataset was much longer. For that reason, the final "best" model was trained and tested on the dataset with 15,000 samples for each class. 
