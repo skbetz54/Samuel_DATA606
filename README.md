@@ -105,7 +105,7 @@ After testing several different and figuring out which combinations work the bes
 
 <img width="400" alt="model_desc" src="https://user-images.githubusercontent.com/70443630/168905350-ccdfab4a-950e-449f-b2a2-61f64775a1c0.PNG">
 
-The "best" model uses the downsampled dataset with 15,000 samples per emotion and a batch size of 32. It also only has one hidden layer with 256 hidden nodes. Lastly, since I am saving training time by using the smaller dataset, I trained the model for 25 epochs. Afte
+The "best" model uses the downsampled dataset with 15,000 samples per emotion and a batch size of 32. It also only has one hidden layer with 256 hidden nodes. Lastly, since I am saving training time by using the smaller dataset, I trained the model for 25 epochs. After testing, the highest accuracy achieved was **82.5%**, and I chose to save and use this model for predicting on the real-world articles.
 
 **Results**
 
