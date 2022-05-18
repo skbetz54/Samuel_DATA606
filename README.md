@@ -65,7 +65,7 @@ And for surprised:
 <img width="600" alt="wordcloud_surprised" src="https://user-images.githubusercontent.com/70443630/155911377-2932d035-b9d2-44ee-a088-b1cb031e2bab.PNG">
 
   
-## **Machine Learning Implementation and Results**
+## **Machine Learning Implementation**
 
 Now that the data is cleaned and ready to be used within a deep learning model, I can now build a model to capture how much fear is being used within current news media.
 
@@ -93,16 +93,25 @@ As we can see below, while the smaller datasets increased their accuracy slightl
 
 <img width="500" alt="b1_full_time" src="https://user-images.githubusercontent.com/70443630/168902624-b32fd28b-a2e2-4a8e-b02d-24d4f1a9c0fb.PNG">
 
-The second hyperparameter of focus was batch size. Again, similar to the size of the dataset, the main difference in using different batch sizes is in training time. After testing various batch sizes (1, 16, & 32), the "best" model was trained and tested with a batch size of 16.
+The second hyperparameter of focus was batch size. Again, similar to the size of the dataset, the main difference in using different batch sizes is in training time. After testing various batch sizes (1, 16, & 32), the "best" model was trained and tested with a batch size of 32. 
 
-After testing several different parameters and figuring which combinations work the best, the following model was used:
+Below is a table of selected results, looking at both different sized datasets and different batch sizes. As we can see, the largest dataset tended to have higher test accuracy values. However, the total time these models took were substantially higher than the smaller datasets.
+
+
+<img width="569" alt="results_batch_size" src="https://user-images.githubusercontent.com/70443630/169048621-f7ab94cd-a68a-460f-b652-a851ddcca345.PNG">
+
+
+After testing several different and figuring out which combinations work the best, the following model was used:
 
 <img width="400" alt="model_desc" src="https://user-images.githubusercontent.com/70443630/168905350-ccdfab4a-950e-449f-b2a2-61f64775a1c0.PNG">
 
+The "best" model uses the downsampled dataset with 15,000 samples per emotion and a batch size of 32. It also only has one hidden layer with 256 hidden nodes. Lastly, since I am saving training time by using the smaller dataset, I trained the model for 25 epochs. Afte
 
 **Results**
 
-As mentioned above the articles being tested come from CNN and Fox News, obtained through scraping each site found [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb) for CNN and [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb) for Fox News. 50 articles were obtained from each site from a period of 5 days (10 articles per site per day). The breakdown of the scraped articles are as follows:
+- [Link to Article Testing](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Article_Testing.ipynb)
+
+As mentioned above the articles being tested come from CNN and Fox News, obtained through scraping each site found [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb) for CNN and [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb) for Fox News. 50 articles were obtained from each site. The breakdown of the scraped articles are as follows:
 
 <img width="500" alt="table_scrape" src="https://user-images.githubusercontent.com/70443630/168900045-86f8728a-fa00-49af-94b1-906be5a6954b.PNG">
 
