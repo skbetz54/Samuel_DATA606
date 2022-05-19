@@ -164,9 +164,7 @@ The "best" model uses the downsampled dataset with 15,000 samples per emotion an
 
 - [Link to Article Testing](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Article_Testing.ipynb)
 
-As mentioned above the articles being tested come from CNN and Fox News, obtained through scraping each site found [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb) for CNN and [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb) for Fox News. 50 articles were obtained from each site. The breakdown of the scraped articles are as follows:
-
-<img width="500" alt="table_scrape" src="https://user-images.githubusercontent.com/70443630/168900045-86f8728a-fa00-49af-94b1-906be5a6954b.PNG">
+As mentioned above the articles being tested come from CNN and Fox News, obtained through scraping each site found [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb) for CNN and [here](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb) for Fox News. 50 articles were obtained from each site.
 
 Each article is contained in a Pandas dataframe, and is preprocessed using the same cleaning techniques used on the huggingface dataset (tokenizing, stopword removal, lemmatization). After this, the text of each article is run through the saved model described above and a prediction of which emotion the article represents is sent back. 
 
