@@ -127,7 +127,7 @@ The second hyperparameter of focus was batch size. Again, similar to the size of
 
 Accuracy per Epoch             |  Accuracy vs. Training Time
 :-------------------------:|:-------------------------:
-<img width="200" alt="b16_full" src="https://user-images.githubusercontent.com/70443630/169362643-44129bd9-4ac8-454f-9d42-b9d8778c4e0b.PNG">  |  <img width="200" alt="b16_full_time" src="https://user-images.githubusercontent.com/70443630/169362749-d8c23dd8-c5d1-44ed-913e-c27693e052e2.PNG">
+<img width="500" alt="b16_full" src="https://user-images.githubusercontent.com/70443630/169362643-44129bd9-4ac8-454f-9d42-b9d8778c4e0b.PNG">  |  <img width="500" alt="b16_full_time" src="https://user-images.githubusercontent.com/70443630/169362749-d8c23dd8-c5d1-44ed-913e-c27693e052e2.PNG">
 
 
 As we can see, the full dataset used with a batch size of 16 performs the best. However, training time was much shorter for the smaller dataset. Additionally, both the smaller datasets are still learning at the end of the 10th epoch. Each one would likely benefit from additional training cycles.
@@ -136,7 +136,7 @@ As we can see, the full dataset used with a batch size of 16 performs the best. 
 
 Accuracy per Epoch             |  Accuracy vs. Training Time
 :-------------------------:|:-------------------------:
- <img width="200" alt="b32_full" src="https://user-images.githubusercontent.com/70443630/169363377-bba5cb3b-f89e-4022-bec8-00c443f13c79.PNG">  |  <img width="200" alt="b32_full_time" src="https://user-images.githubusercontent.com/70443630/169363436-47b64069-8b06-4f41-88d9-27b655e5dc53.PNG">
+ <img width="500" alt="b32_full" src="https://user-images.githubusercontent.com/70443630/169363377-bba5cb3b-f89e-4022-bec8-00c443f13c79.PNG">  |  <img width="500" alt="b32_full_time" src="https://user-images.githubusercontent.com/70443630/169363436-47b64069-8b06-4f41-88d9-27b655e5dc53.PNG">
 
 
 Again, with a batch size of 32 we see on the left a much lower training time for the smaller sample-size datasets. What is different here is that the full dataset 
