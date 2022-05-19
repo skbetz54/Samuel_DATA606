@@ -11,7 +11,7 @@
 - [Link to Machine Learning](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Machine_Learning_Implementation.ipynb)
 - [Link to Web Scrape - CNN](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_CNN.ipynb)
 - [Link to Web Scrape - Fox News](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Web_Scrape_Fox_News.ipynb)
-- [Link to Article Testing](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Article_Testing.ipynb)
+- [Link to Article Testing](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/Articles_Testing.ipynb)
 
 
 
