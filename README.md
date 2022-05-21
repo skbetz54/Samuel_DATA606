@@ -53,13 +53,17 @@ The variable of measure in this project is the emotion of the article/headline/s
 - [Link to Happyface EDA notebook](https://github.com/skbetz54/Samuel_DATA606/blob/main/Notebooks/EDA_Hugging_Face.ipynb)
 
 The first part of my project entails creating a machine learning model (specifically a Recurrent Neural Network) using the labeled Huggingface emotion data, but before I dive into the modeling, I need to understand the dataset a little better. This entails both understanding the entire dataset, and also the difference between classes within the dataset. For example, in the image below we see that sadness and joy have a much higher number of samples compared to other emotions. This tells us that in the model creation, we will have to deal with this class imbalance by downsampling the high-frequency emotions.
+
 <p align = 'center'>
 <img width="500" alt="frequency chart" src="https://user-images.githubusercontent.com/70443630/155910809-a578cbf8-e554-4b90-a0e8-38f26061dae0.PNG">
 </p>
+
 Another point of focus in this Exploratory Analysis is the word frequency for each emotion. When looking at the top 10 words used for fear and surprise, there is not much we can gather; there are only a couple words that are associated with the emotion (fear --> afraid, surprised --> shock). While this does not tell us much about unique words seen in each class, it can help us dictate what words NOT to include in the model building. For example, the word "really" and "like" appear often in every single class. Adding these types of words prevelant throughout the dataset for each class to the list of stopwords is something that I wanted to end up testing its impact.
 
+<p align = 'center'>
 <img width="500" alt="freq_fear" src="https://user-images.githubusercontent.com/70443630/155911189-b88e9b82-a42c-4eae-9f42-82157a3ee4e6.PNG"><img width="500" alt="freq_surprise" src="https://user-images.githubusercontent.com/70443630/155911193-9f31ffb9-d358-4b20-9cce-1c9c9632d849.PNG">
-
+</p>
+  
 However, if we expand our search and include more of the top words being used for each emotion, we start to see a better picture of the unique vocabularies being used with the model's recognizing each emotion. To do this, I created wordclouds for each emotion and the frequency of words being used, with the top 100 words being shown.
 
 First for fear:
